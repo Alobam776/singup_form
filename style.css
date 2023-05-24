@@ -76,7 +76,13 @@ select {
   align-items: center;
   justify-content: center;
   text-align: center;
+  position: relative;
 }
+.log{
+  display: inline;
+  padding-left: 5px;
+}
+
 button {
   margin-top: 20px;
   padding: 10px;
@@ -86,17 +92,7 @@ button {
   border-radius: 10px;
   cursor: pointer;
 }
-.right {
-  /* border: 1px solid blue; */
-  width: 50%;
-  height: 100vh;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
-  background-image: url(./images.png);
-  background-size: cover;
-  background-position: cover cover;
-  position: relative;
-}
+
 .hr {
   display: flex;
   justify-content: center;
@@ -170,15 +166,60 @@ button[type="submit"] {
 .sign-up > a {
   text-decoration: none;
 }
+
+.right {
+  /* border: 1px solid blue; */
+  width: 50%;
+  height: 100vh;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  background-image: url(./images.png);
+  background-size: cover;
+  background-position: cover cover;
+  position: relative;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.sign{
+  width: 90px;
+  /* top: 0; */
+  padding: 10px 0px;
+  border-color: #e1e1e1;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  background-color: transparent;
+}
+.join{
+  width: 90px;
+  padding: 10px 5px;
+  border-color: #e1e1e1;
+  border-radius: 20px;
+  color: white;
+  background-color: transparent;
+}
+
 @media (max-width: 800px) {
   .right {
     display: none;
   }
   .left{
     width: 100%;
+    margin: 20px;
     height: 100vh;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
   }
   
 }
+/* @media (max-width: 390px) {
+  .header h1{
+    font-size: 2em;
+  }
+} */
